@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About & Projects | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Caleb Speaker's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about-projects.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row align-items-center">
+        
+        <!-- Headshot Column -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="images/IMG_E5750.JPG" alt="Caleb Speaker Headshot" class="img-fluid rounded-circle" style="width: 250px; height: 250px; object-fit: cover; border: 4px solid #ddd;">
+        </div>
+        
+        <!-- Bio Column -->
+        <div class="col-md-8">
+          <p>Hello! I'm <strong>Caleb Speaker</strong>, an aspiring software engineer focused on learning and building impactful digital solutions. I have a growing passion for clean, responsive design and practical application development.</p>
+          
+          <p>My key skills include:</p>
+          <ul>
+            <li>Front-End Development with HTML, CSS, JavaScript, and Bootstrap</li>
+            <li>Back-End with Python, Flask, and SQL databases</li>
+            <li>REST API design and integration</li>
+          </ul>
+  
+          <p>I'm constantly challenging myself with new projects, and I believe the best way to grow is by building real things, failing forward, and staying curious. I'm excited to continue improving my craft and contributing to meaningful software solutions.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">My Projects</h2>
+    <div class="row g-4">
+<!-- Project 1 -->
+<div class="col-md-4">
+    <div class="card h-100">
+      <img src="images/todolist.png" class="card-img-top" alt="To-Do App Screenshot">
+      <div class="card-body">
+        <h5 class="card-title">To-Do List Application</h5>
+        <p class="card-text">
+          A simple Python command-line application to manage daily tasks. Users can add, view, or delete tasks, with clear menu-driven navigation and built-in error handling.
+        </p>
+        <a href="https://github.com/Caleb-Speaker/To-Do-Application" class="btn btn-outline-primary" target="_blank">View Code</a>
+        <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+      </div>
+    </div>
+  </div>
+<!-- Project 2 -->
+<div class="col-md-4">
+    <div class="card h-100">
+      <img src="images/joseph-barrientos-DLOSn7e0VZU-unsplash.jpg" class="card-img-top" alt="Turn-Based Game Screenshot">
+      <div class="card-body">
+        <h5 class="card-title">Turn-Based Battle Game</h5>
+        <p class="card-text">
+          A Python terminal game where players select from four unique character classes to battle a regenerating Evil Wizard. Each class has distinct abilities, and gameplay includes attacking, healing, and using specials.
+        </p>
+        <a href="https://github.com/Caleb-Speaker/defeat-the-evil-wizard" class="btn btn-outline-primary" target="_blank">View Code</a>
+        <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+      </div>
+    </div>
+  </div>
+<!-- Project 3 -->
+<div class="col-md-4">
+    <div class="card h-100">
+      <img src="images/roberto-cortese-ejhjSZKTeeg-unsplash.jpg" class="card-img-top" alt="E-commerce API Screenshot">
+      <div class="card-body">
+        <h5 class="card-title">E-commerce REST API</h5>
+        <p class="card-text">
+          A RESTful API built with Flask to manage users, products, and orders. It includes SQLAlchemy models, Marshmallow schemas, and Postman tests to simulate and verify request flows like user creation, order submission, and more.
+        </p>
+        <a href="https://github.com/Caleb-Speaker/ecommerce_api" class="btn btn-outline-primary" target="_blank">View Code</a>
+        <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+      </div>
+    </div>
+  </div>
+<!-- Project 4 -->
+<div class="col-md-4">
+    <div class="card h-100">
+      <img src="images/oleg-brovchenko-Qi_PUktTPBU-unsplash.jpg" class="card-img-top" alt="Concert Event Center Screenshot">
+      <div class="card-body">
+        <h5 class="card-title">Concert Event Center Website</h5>
+        <p class="card-text">
+          A responsive multi-page HTML/CSS site built for a concert venue. Features include event listings, a styled food menu, Google Maps-style location image, and a contact form — all organized using flexbox and media queries.
+        </p>
+        <a href="https://github.com/Caleb-Speaker/event-center-website" class="btn btn-outline-primary" target="_blank">View Code</a>
+        <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Get in Touch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Please use the contact form to reach out. I’d love to hear from you!
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 Caleb Speaker's Portfolio | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
